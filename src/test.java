@@ -18,7 +18,7 @@ public class test {
 		boolean run = true;
 		while (run) {
 			try {
-				File myObj = new File("C:/Users/danhernandez/OneDrive - ENDAVA/Desktop/Challenges/2nd challenge - Java/matriz.txt");
+				File myObj = new File("C:/Users/danhernandez/OneDrive - ENDAVA/Desktop/Challenges/2nd challenge/challenge/matriz.txt");
 				Scanner myReader = new Scanner(myObj);
 
 				String[] vectorSize = new String[2];
