@@ -8,15 +8,14 @@ import java.util.Arrays;
 
 public class test {
 	
-	private void addAdjacentNodes() {
+	//private void addAdjacentNodes() {
 		// create node if not exist
 		// create node 
-	}
+	//}
 
-	@SuppressWarnings("deprecation")
+	//@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		boolean run = true;
-		int i = 0;
 		while (run) {
 			try {
 				File myObj = new File("C:/Users/danhernandez/OneDrive - ENDAVA/Desktop/Challenges/2nd challenge - Java/matriz.txt");
@@ -27,18 +26,21 @@ public class test {
 				if (myReader.hasNextLine())
 					vectorSize = myReader.nextLine().split(",");
 
-				String[][] matrix = new String[new Integer(vectorSize[0])][new Integer(vectorSize[1])];
+				int [][] matrix = new int[new Integer(vectorSize[0])][new Integer(vectorSize[1])];
 				
-				while (myReader.hasNextLine() && i < new Integer(vectorSize[0])) {
-					String data = myReader.nextLine();
-					matrix[i] = data.split(","); 
-					i++;
+				while (myReader.hasNextLine()) {
+                    for (int i=0; i<matrix.length; i++){
+                        String[] data = myReader.nextLine().trim().split(",");
+                        for (int j=0; j<data.length; j++){
+                            matrix[i][j] = Integer.parseInt(data[j]);
+                        }
+                    }					
 				}
 				
 				System.out.println("Matrix:");
 				
-				System.out.println(Arrays.deepToString(matrix).replace("],","\n").replace(",","\t| ")
-                        .replaceAll("[\\[\\]]", " "));
+				System.out.println(Arrays.deepToString(matrix));
+                System.out.println(matrix.getClass().getComponentType());
 				
 				myReader.close();
 			} catch (FileNotFoundException e) {
