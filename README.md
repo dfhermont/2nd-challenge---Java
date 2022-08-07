@@ -1,18 +1,11 @@
-## Getting Started
+## Challenge 01 - Computer Science
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Given the current food needs, coffee consumption has increased substantially, so this challenge aims to propose the optimal solution to an algorithm, implemented in robot harvesters, that allows identifying the longest harvest paths and thus finding the trees where the harvest should start in order to optimize resources and time.
 
 ## Folder Structure
 
-The workspace contains two folders by default, where:
+The workspace contains 3 files and 4 folders, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Internship Program Challenge 01: The challenge guidelines
+- map-matriz: The sample matrix (txt extension)
+- The folders cointains the corresponding code
